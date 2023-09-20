@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script src="main.js"></script>
+
+</head>
+<body class="bg-[#0416D9] font-sans flex justify-center items-center h-screen">
+
+    <main class="text-xl flex flex-col justify-center items-center gap-[10px] bg-[#0416D9]" id="main" >
+        
+        <h1 class="text-4xl text-[#FC8C05]	">Ingresa el nombre de una PlayList 🔊</h1>
+        <input  class="border-2 w-[450px] text-center" type="text" id="playlist">
+
+        <h2 class="text-2xl	text-[#FC8C05] ">¿Cuántas canciones quieres agregar? 🎶</h2>
+        <input class="border-2 w-[80px] text-center"  type="number" id="agregar_canciones" min="1" required>
+
+        <button class="inline-block rounded bg-amber-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#e4a11b] transition duration-150 ease-in-out hover:bg-warning-600 hover:shadow-[0_8px_9px_-4px_rgba(228,161,27,0.3),0_4px_18px_0_rgba(228,161,27,0.2)] focus:bg-warning-600 focus:shadow-[0_8px_9px_-4px_rgba(228,161,27,0.3),0_4px_18px_0_rgba(228,161,27,0.2)] focus:outline-none focus:ring-0 active:bg-warning-700 active:shadow-[0_8px_9px_-4px_rgba(228,161,27,0.3),0_4px_18px_0_rgba(228,161,27,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(228,161,27,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(228,161,27,0.2),0_4px_18px_0_rgba(228,161,27,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(228,161,27,0.2),0_4px_18px_0_rgba(228,161,27,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(228,161,27,0.2),0_4px_18px_0_rgba(228,161,27,0.1)] "
+         onclick="playlist()" id="btn-crear-canciones">Crear Canciones</button>
+        
+        <div id="repositorio-canciones"></div>
+        <div class="grid grid-cols-3  gap-[10px]" id="input-canciones"></div>
+        <div id="button-crearPlaylist"></div>
+
+        <div id="resultado"></div>
+        <div id="reset"></div>
+
+
+    </main>
+    
+
+</body>
+</html>
